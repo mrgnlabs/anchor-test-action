@@ -1,0 +1,17 @@
+name: 'Anchor Test'
+author: 'MRGN Labs'
+description: 'Run an anchor test command'
+branding:
+  icon: anchor
+  color: blue
+inputs:
+  args:
+    description: 'anchor test arguments'
+    required: false
+    default: ''
+runs:
+  using: 'docker'
+  image: 'docker://mrgnlabs/solana-dev:0.0.2-alpha'
+  entrypoint: shell-exec
+  args: 
+    - 'anchor test ${{ inputs.args }}'
