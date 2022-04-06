@@ -14,5 +14,6 @@ runs:
   image: 'docker://mrgnlabs/solana-dev:0.0.2-alpha'
   entrypoint: shell-exec
   args: 
+    - yarn
     - 'solana-keygen new --no-bip39-passphrase'
     - 'anchor test ${{ inputs.args }}'
