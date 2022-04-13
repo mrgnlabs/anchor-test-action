@@ -1,6 +1,6 @@
 name: 'Solana Anchor Test'
 author: 'MRGN Labs'
-description: 'Run an anchor test command'
+description: 'Run anchor tests'
 branding:
   icon: anchor
   color: blue
