@@ -1,5 +1,5 @@
 # Anchor Test action
-Github action for running Anchor tests
+Github action for running Anchor tests for programs on the Solana blockchain
 
 
 ### Example action
