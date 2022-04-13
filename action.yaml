@@ -1,4 +1,4 @@
-name: 'Anchor Test'
+name: 'Solana Anchor Test'
 author: 'MRGN Labs'
 description: 'Run an anchor test command'
 branding:
