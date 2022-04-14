@@ -9,7 +9,7 @@ anchor-test:
     steps:
       - uses: actions/checkout@v2
       - name: Anchor Test
-        uses: mrgnlabs/anchor-test-action@0.3
+        uses: mrgnlabs/anchor-test-action@v0.3
         with:
           args: <anchor test args>
 ```
