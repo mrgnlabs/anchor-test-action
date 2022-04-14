@@ -15,5 +15,6 @@ runs:
   entrypoint: shell-exec
   args: 
     - yarn
+    - yarn add ts-mocha
     - 'solana-keygen new --no-bip39-passphrase'
     - 'anchor test ${{ inputs.args }}'
