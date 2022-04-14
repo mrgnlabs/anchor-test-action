@@ -12,7 +12,7 @@ on:
     branches: main
 
 jobs:
-anchor-test:
+  anchor-test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
