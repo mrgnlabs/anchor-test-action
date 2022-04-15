@@ -17,7 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Anchor Test
-        uses: mrgnlabs/anchor-test-action@v0.3
+        uses: mrgnlabs/anchor-test-action@v0.4
         with:
           args: "" # add anchor test args, e.g. "--skip-lint"
 ```
