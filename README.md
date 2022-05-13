@@ -20,4 +20,5 @@ jobs:
         uses: mrgnlabs/anchor-test-action@v0.4
         with:
           args: "" # add anchor test args, e.g. "--skip-lint"
+          workspace_dir: "." # path to the anchor workspace, e.g. "./my_workspace"
 ```
