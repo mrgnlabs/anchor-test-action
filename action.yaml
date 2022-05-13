@@ -9,11 +9,16 @@ inputs:
     description: 'anchor test arguments'
     required: false
     default: ''
+  workspace_dir:
+    description: 'anchor workspace directory'
+    required: false
+    default: '.'
 runs:
   using: 'docker'
   image: 'docker://mrgnlabs/solana-dev:0.0.2-alpha'
   entrypoint: shell-exec
-  args: 
+  args:
+    - 'cd ${{ inputs.workspace_dir }}'
     - yarn
     - yarn add ts-mocha
     - 'solana-keygen new --no-bip39-passphrase'
